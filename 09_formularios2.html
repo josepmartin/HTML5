@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Josep A. Martin">
+        <meta name="description" content="Video 9. Formularios 2">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video 9. Formularios 2</title>
+    </head>
+
+    <body>
+        
+        <h1>Formulario</h1>
+        <!-- El atributo enctype es necesario para poder enviar archivos-->
+        <form action="#" method="GET" autocomplete="off" enctype="multipart/form-data">
+            <p>
+                <input type="radio" name="experiencia" value="junior"/> Junior
+                <br>
+                <input type="radio" name="experiencia" value="semi junior"/> Semi Junior
+                <br>
+                <input type="radio" name="experiencia" value="senior" checked/> Senior
+                <br>
+                <input type="radio" name="experiencia" value="ninguna"/> Ninguna
+            </p>
+
+            <p>
+                <input type="checkbox" name="futbol" value="futbol">Futbol
+                <br>
+                <input type="checkbox" name="basquetbol" checked>Basquetbol
+                <br>
+                <input type="checkbox" name="beisbol">Beisbol
+                <br>
+                <input type="checkbox" name="voleibol">Voleibol
+                <br>
+                <input type="checkbox" name="otro">Otro
+                <br>
+            </p>
+
+            <p>
+                <select multiple="multiple" size="3">
+                    <option>Azul</option>
+                    <option selected>Verde</option>
+                    <option>Rojo</option>
+                    <option>Amarillo</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Buscador:</label>
+                <input list="buscar">
+                <datalist id="buscar">
+                    <option>Azul</option>
+                    <option selected>Verde</option>
+                    <option>Rojo</option>
+                    <option>Amarillo</option>
+                </datalist>
+            </p>
+
+            <p>
+                <input type="file" name="archivo" accept=".pdf, image/*" multiple>
+                <input type="hidden" name="oculto" value="oculto">
+                <br>
+                <br>
+                <!-- Con el atributo readonly no permite cambiar el valor-->
+                <input type="text" name="sololectura" value="solo lectura" readonly>
+                <br>
+                <!-- Con el atributo disabled, desactiva el control para no poder modificar nada-->
+                <input type="text" name="desactivado" value="desactivado" disabled>
+            </p>
+
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </p>
+
+        </form>
+
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Josep A. Martin">
+        <meta name="description" content="Video 10. Contenido interactivo y embebido">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video 10. Contenido interactivo y embebido</title>
+    </head>
+
+    <body>
+
+        <h1>Contenido Interactivo</h1>
+
+        <details open>
+            <summary>Curso de HTML5</summary>
+            1. Introducción<br>
+            2. Elementos básicos<br>
+            3. Formateo de texto<br>
+            4. Listas<br>
+        </details>
+
+        <dialog id="dialogo">Este es un cuadro de diálogo en HTML5</dialog>
+        
+        <p>
+            <!-- Solo funciona en Chrome-->
+            <button type="button" onclick="document.getElementById('dialogo').open=true;">Abrir</button>
+            <button type="button" onclick="document.getElementById('dialogo').open=false;">Cerrar</button>
+        </p>
+
+        <br>
+
+        <iframe width="600" height="400" src="https://www.sport.es">
+            <p>
+                Navegador no compatible.
+            </p>
+        </iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.52881594442!2d2.078727768193166!3d41.39476881449206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1sca!2ses!4v1594660428909!5m2!1sca!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V0H8UF29te4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </body>
+
+</html>

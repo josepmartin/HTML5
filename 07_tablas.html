@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Josep A. Martin">
+        <meta name="description" content="Video 7. Tablas">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video 7. Tablas</title>
+    </head>
+
+    <body>
+        
+        <table border="1">
+            <caption>Productos</caption>
+
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Existencias</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Refresco</td>
+                    <td>1,00€</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Patatas fritas</td>
+                    <td>1,50€</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>48</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+
+        <table border="1" style="width: 50%;">
+            <caption>Combinación de celdas</caption>
+
+            <colgroup>
+                <col style="width: 25%; background:yellow;" />
+                <col style="width: 40%;" />
+                <col style="width: 35%;" />
+            </colgroup>
+
+            <tr>
+                <td>Clase A</td>
+                <td>Clase B</td>
+                <td>Clase C</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">X</td>
+                <td rowspan="2">Y</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>

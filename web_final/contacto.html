@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Josep A. Martin">
+        <meta name="description" content="Video 12. Proyecto final">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video 12. Proyecto final</title>
+
+        <style>
+
+            body{
+                width: 980px;
+                margin: 0px auto;
+            }
+
+            header{
+                padding: 0 0 90px 0px;
+            }
+
+            #logo-header{
+                float: left;
+                text-decoration: none;
+            } 
+
+            #site-name{
+                display: block;
+                float: left;
+            }
+
+            nav{
+                background-color: #1c11c0;
+                padding-left: 4px;
+                height: 24px;
+            }
+
+            nav ul li{
+                display: inline;
+                padding: 0px 20px 5px 10px;
+                border-right: 1px solid yellow;
+            }
+
+            nav ul li a{
+                color:yellow;
+                text-decoration: none;
+            }
+
+            footer{
+                position: absolute;
+                bottom: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <a id="logo-header" href="https://www.fcbarcelona.cat"><img src="images/fcbarcelona.jpg" width="75" height="75"></a>
+            <h1 id="site-name">FC Barcelona Información</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="secciones.html">Secciones</a></li>
+                <li><a href="penyas.html">Peñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <article>
+
+            <h2>Contacto</h2>
+
+            <iframe style="float: right;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16935.5563471616!2d2.1078626504852647!3d41.37817596741401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576297baf%3A0x44f65330fe1b04b9!2sCamp%20Nou!5e0!3m2!1sca!2ses!4v1594665493572!5m2!1sca!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <form id="contacto" action="#" method="POST" autocomplete="off">
+
+                <div>
+                    <label>Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" size="20" required autofocus>
+                </div>
+
+                <div>
+                    <label>Correo:</label><br>
+                    <input type="email" id="nombre" name="nombre" size="20" required>
+                </div>
+
+                <div>
+                    <label>Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="7" cols="30" required></textarea><br>
+                </div>
+
+                <input id="enviar" type="submit" value="Enviar">
+
+
+            </form>
+        </article>
+
+        <footer>
+            <p>&#169; 2020 <a href="https://www.fcbarcelona.cat">FC Barcelona Información</a></p>
+        </footer>
+    </body>
+
+</html>

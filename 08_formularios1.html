@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Josep A. Martin">
+        <meta name="description" content="Video 8. Formularios 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video 8. Formularios 1</title>
+    </head>
+
+    <body>
+        
+        <h1>Formulario</h1>
+
+        <form action="#" method="POST" autocomplete="off" >
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" size="30" maxlength="10" placeholder="Introduce el nombre" required autofocus/>
+            </p>
+
+            <p>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" size="30" required />
+            </p>
+
+            <p>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" />
+            </p>
+
+            <p>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" />
+            </p>
+
+            <p>
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" min="1" max="100" step="2" />
+            </p>
+
+            <p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" />
+                <!-- El tipo datetime y similares aparece mejor en dispositivos móviles que en desktop -->
+            </p>
+
+            <p>
+                <input type="range" />
+            </p>
+
+            <p>
+                <input type="color" />
+            </p>
+
+            <p>
+                <label for="observaciones" >Observaciones:</label>
+                <textarea id="observaciones" name="observaciones" cols="50" rows="5"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+
+    </body>
+
+</html>
